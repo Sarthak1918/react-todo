@@ -1,3 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #ccc3;
+  background-color: #fff2;
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px 10px #0005;
+  color: white;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-block: 10px;
+  padding: 10px;
+}
+
+.logo {
+  margin: 0;
+  color: #fff;
+
+}
+
+.search-box {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+.search-box::placeholder {
+  color: black
+}
+
+form {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+form input {
+  flex: 1;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-left: 10px;
+}
+
+form input::placeholder {
+  color: black;
+}
+
+form button {
+  color: white;
+  background-color: rgb(17, 81, 210);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px;
+  padding-inline: 10px;
+
+}
+
+.itemSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 5px;
+
+}
+
+.itemSet button {
+  color: white;
+  background-color: rgb(231, 18, 22);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 4px;
+  padding-inline: 10px;
+
+}
+
+.striked {
+  text-decoration: line-through;
 }
